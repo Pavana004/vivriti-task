@@ -22,7 +22,7 @@ mongoose.connect('mongodb+srv://Pavan:fXL4E1GnhABEwjVb@cluster0.khhogzb.mongodb.
 app.use(express.json());
 app.use("/",userinfo);
 
-
+app.get("/",(req,res)=>res.send("welcome"));
 
 //server connection
 
