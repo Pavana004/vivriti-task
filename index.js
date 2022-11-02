@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const PORT = 8000 || process.env.PORT;
+const port = 8000 || process.env.PORT;
 const userinfo = require("./router");
 
 
@@ -26,4 +26,4 @@ app.use("/",userinfo);
 
 //server connection
 
-app.listen(PORT,console.log("sever started"));
+app.listen(port,console.log("sever started"));
