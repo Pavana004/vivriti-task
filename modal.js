@@ -3,9 +3,11 @@ const mongoose = require("mongoose")
 
 const schema = mongoose.Schema({
      
-     name : {type:String,require:true},
-     email : {type:String,require:true},
-     password : {type:String,require:true}
+     firstname : {type:String,require:true},
+     lastname : {type:String,require:true},
+     mobilenumber : {type:Number,require:true},
+     address : {type:String,require:true},
+     department : {type:String,require:true},
 
 })
 

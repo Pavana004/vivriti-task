@@ -1,11 +1,13 @@
 const express = require("express");
-require("dotenv").config();
 const app = express();
 const mongoose = require("mongoose");
-const port = process.env.PORT||5000;
+const port = 5000;
 const userinfo = require("./router");
 
 
+
+
+// i use nodejs and expressjs framework to create rest_api and then i use mongoDB to store user info, 
 
 
 
@@ -22,6 +24,7 @@ mongoose.connect('mongodb+srv://Pavan:fXL4E1GnhABEwjVb@cluster0.khhogzb.mongodb.
 //middleware
 app.use(express.json());
 app.use("/",userinfo);
+
 
 app.get("/",(req,res)=>res.send("welcome"));
 
